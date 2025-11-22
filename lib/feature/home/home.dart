@@ -97,6 +97,7 @@ class HomeScreen extends StatelessWidget {
               physics: const BouncingScrollPhysics(),
               slivers: [
                 SliverToBoxAdapter(child: ProfileCard()),
+                SliverToBoxAdapter(child: ProgressIndicatorWidget()),
                 SliverPadding(
                   padding: const EdgeInsets.symmetric(
                     horizontal: 23,
@@ -118,6 +119,62 @@ class HomeScreen extends StatelessWidget {
                 ),
                 SliverToBoxAdapter(child: SizedBox(height: 20)),
               ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+
+class ProgressIndicatorWidget extends StatelessWidget {
+  const ProgressIndicatorWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    const double dotSize = 7.0;
+    const double barHeight = dotSize;
+    const double activeBarWidth = dotSize * 3;
+    const double spacing = 8.0;
+
+    return Center(
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children:[
+          Container(
+            width: activeBarWidth,
+            height: barHeight,
+            decoration: BoxDecoration(
+              color:MyColors.primaryColor,
+              borderRadius: BorderRadius.circular(barHeight / 2),
+            ),
+          ),
+          const SizedBox(width: spacing),
+          Container(
+            width: dotSize,
+            height: dotSize,
+            decoration: const BoxDecoration(
+              color: Colors.white,
+              shape: BoxShape.circle,
+            ),
+          ),
+          const SizedBox(width: spacing),
+          Container(
+            width: dotSize,
+            height: dotSize,
+            decoration: const BoxDecoration(
+              color: Colors.white,
+              shape: BoxShape.circle,
+            ),
+          ),
+          const SizedBox(width: spacing),
+          Container(
+            width: dotSize,
+            height: dotSize,
+            decoration: const BoxDecoration(
+              color: Colors.white,
+              shape: BoxShape.circle,
             ),
           ),
         ],

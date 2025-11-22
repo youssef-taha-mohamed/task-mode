@@ -135,7 +135,7 @@ class InvoiceManagementScreen extends StatelessWidget {
       onPressed: () {},
       width: double.infinity,
       backgroundColor: appTheme.gray_900,
-      borderColor: appTheme.colorFF3F3B,
+      borderColor: Color.fromRGBO(59, 173, 252, 0.25),
       textColor: appTheme.whiteCustom,
     );
   }

@@ -1,5 +1,3 @@
-import 'package:flutter_application_1/core/style/app_colors.dart';
-
 import '../../../core/resources/svg.dart';
 import 'package:flutter/material.dart';
 
@@ -46,7 +44,7 @@ final List<InvoiceItem> invoiceItems = [
     price: '1.000.000 د.ع',
     quantity: 20,
     imagePath: SvgAssets.image,
-    isSelected: true,
+    isSelected: false,
     hasAction: true,
   ),
   InvoiceItem(
@@ -64,7 +62,7 @@ final List<InvoiceItem> invoiceItems = [
     price: '1.000.000 د.ع',
     quantity: 20,
     imagePath: SvgAssets.image,
-    isSelected: false,
+    isSelected: true,
     hasAction: false,
   ),
   InvoiceItem(

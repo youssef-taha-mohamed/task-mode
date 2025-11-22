@@ -176,7 +176,7 @@ class NewInvoiceScreen extends StatelessWidget {
                         const SizedBox(height: 14),
                         SharedButton(
                           backgroundColor: MyColors.primaryColor,
-                          height: 46,
+                          height: 50,
                           width: double.infinity,
                           padding: EdgeInsets.symmetric(
                             horizontal: 16,

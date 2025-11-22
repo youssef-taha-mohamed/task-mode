@@ -142,16 +142,16 @@ class InvoiceItemCard extends StatelessWidget {
           spacing: 4.h,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            CustomImageView(
+              imagePath: SvgAssets.expires,
+              width: 12.h,
+              height: 12.h,
+            ),
             MainText(
               'منتهية الصلاحية',
               color: MyColors.color33,
               fontSize: 10,
               fontWeight: FontWeight.w400,
-            ),
-            CustomImageView(
-              imagePath: SvgAssets.expires,
-              width: 12.h,
-              height: 12.h,
             ),
           ],
         ),
